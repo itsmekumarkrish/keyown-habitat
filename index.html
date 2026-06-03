@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyOwn Habitat | The Future of Home Ownership</title>
+    <meta name="description" content="A premium Home Ownership Advisory System (HOAS) designed to transition tenants into homeowners.">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <meta name="theme-color" content="#006241">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css?v=9">
+</head>
+<body>
+
+    <!-- Ambient Animation Background -->
+    <canvas id="ambient-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="Keyown habitat transparent .png" alt="KeyOwn Habitat Logo" class="custom-logo">
+            </div>
+            <div class="nav-links">
+                <a href="#contact" class="btn btn-primary">Get Your Strategy <i class="ph ph-lightning"></i></a>
+                <a href="https://wa.me/919876543210?text=Hi,%20I%20want%20to%20know%20more%20about%20KeyOwn%20Habitat%20Home%20Ownership%20Advisory%20System." class="whatsapp-btn nav-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+                    <i class="ph ph-whatsapp-logo"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-centered">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+        
+        <div class="container">
+            <div class="hero-content text-center">
+                <div class="badge mx-auto">
+                    <i class="ph ph-house-heart"></i> Your Path to Home Ownership
+                </div>
+                <h1 class="headline">
+                    Stop <span class="text-gradient">renting.</span> Start <span class="text-gradient">owning.</span>
+                </h1>
+                <p class="subheadline mx-auto">
+                    We believe everyone deserves to own their home. Let's work together to turn your monthly rent into a down payment, guiding you step-by-step until you get the keys.
+                </p>
+                <div class="hero-actions justify-center">
+                    <a href="#contact" class="btn btn-primary btn-lg">Start Free Assessment <i class="ph ph-arrow-right"></i></a>
+                    <a href="#how-it-works" class="btn btn-glass btn-lg">Learn How It Works</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Partner Logos Marquee -->
+    <section class="partners-marquee reveal-up" style="background: transparent;">
+        <div class="marquee-title">Supported By Trusted Financial & Real Estate Ecosystems</div>
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <!-- Set 1 -->
+                <div class="partner-logo"><i class="ph ph-bank"></i> <span>HDFC Bank</span></div>
+                <div class="partner-logo"><i class="ph ph-shield-star"></i> <span>HDFC Credila</span></div>
+                <div class="partner-logo"><i class="ph ph-chart-bar"></i> <span>ICICI Finance</span></div>
+                <div class="partner-logo"><i class="ph ph-house-line"></i> <span>MagicBricks</span></div>
+                <div class="partner-logo"><i class="ph ph-handshake"></i> <span>SBI Home</span></div>
+                <div class="partner-logo"><i class="ph ph-buildings"></i> <span>Knight Frank</span></div>
+                <div class="partner-logo"><i class="ph ph-coins"></i> <span>LIC Housing</span></div>
+                <div class="partner-logo"><i class="ph ph-trend-up"></i> <span>PropTiger</span></div>
+                
+                <!-- Set 2 (Duplicate for seamless loop) -->
+                <div class="partner-logo"><i class="ph ph-bank"></i> <span>HDFC Bank</span></div>
+                <div class="partner-logo"><i class="ph ph-shield-star"></i> <span>HDFC Credila</span></div>
+                <div class="partner-logo"><i class="ph ph-chart-bar"></i> <span>ICICI Finance</span></div>
+                <div class="partner-logo"><i class="ph ph-house-line"></i> <span>MagicBricks</span></div>
+                <div class="partner-logo"><i class="ph ph-handshake"></i> <span>SBI Home</span></div>
+                <div class="partner-logo"><i class="ph ph-buildings"></i> <span>Knight Frank</span></div>
+                <div class="partner-logo"><i class="ph ph-coins"></i> <span>LIC Housing</span></div>
+                <div class="partner-logo"><i class="ph ph-trend-up"></i> <span>PropTiger</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem (Pain Points) Section -->
+    <section class="problem-section reveal-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge"><i class="ph ph-warning"></i> The Reality of Renting</div>
+                <h2 class="section-title">Are you losing money every month?</h2>
+                <p class="section-subtitle">Most tenants don't realize how much of their wealth is being drained by traditional renting models.</p>
+            </div>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="ph ph-money"></i></div>
+                    <h3 class="problem-title">Wasted Payments</h3>
+                    <p class="problem-desc">Your monthly rent pays someone else's mortgage. It is an unrecoverable expense that never builds your own net worth.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="ph ph-chart-line-down"></i></div>
+                    <h3 class="problem-title">Zero Equity</h3>
+                    <p class="problem-desc">No matter how long you live there, you walk away with nothing. You miss out entirely on property appreciation.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="ph ph-lock-key"></i></div>
+                    <h3 class="problem-title">Restrictive Rules</h3>
+                    <p class="problem-desc">You can't make the space your own, you face unpredictable rent hikes, and you live under the constant threat of eviction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section reveal-up">
+        <div class="container">
+            <div class="about-content text-center">
+                <div class="badge"><i class="ph ph-buildings"></i> About HOAS</div>
+                <h2 class="section-title">Redefining Real Estate for the Modern Renter</h2>
+                <p class="about-desc">KeyOwn Habitat Systems Private Limited is pioneering the Home Ownership Advisory System (HOAS). Our mission is to transform the unrecoverable expense of renting into a structured, transparent pathway to asset legacy.</p>
+                <p class="about-desc">We empower you by building your equity, improving your credit profile, and unlocking access to premium real estate developments that were previously out of reach.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOAS Journey Timeline -->
+    <section id="stages" class="stages-section reveal-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge"><i class="ph ph-path"></i> Your Journey</div>
+                <h2 class="section-title">The Path to Your Front Door</h2>
+                <p class="section-subtitle">We've broken down the complex process of buying a home into a clear, supportive journey. We're with you every step of the way.</p>
+            </div>
+            
+            <div class="journey-grid">
+                <!-- Stage 1 -->
+                <div class="journey-card reveal-up">
+                    <div class="journey-icon"><i class="ph ph-star"></i></div>
+                    <div class="journey-content">
+                        <span class="stage-tag">Phase 1</span>
+                        <h3 class="stage-title">Building Your Foundation</h3>
+                        <p class="stage-desc">We structure your monthly payments so you aren't just paying rent. A portion goes into a secure savings match, quietly building your future down payment while you live comfortably.</p>
+                    </div>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="journey-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="journey-icon"><i class="ph ph-trend-up"></i></div>
+                    <div class="journey-content">
+                        <span class="stage-tag">Phase 2</span>
+                        <h3 class="stage-title">Growing Your Credit</h3>
+                        <p class="stage-desc">Your flawless rental track record shouldn't go unnoticed. We report your on-time payments to boost your credit score, ensuring you qualify for the best mortgage rates down the line.</p>
+                    </div>
+                </div>
+
+                <!-- Stage 3 -->
+                <div class="journey-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="journey-icon"><i class="ph ph-house"></i></div>
+                    <div class="journey-content">
+                        <span class="stage-tag">Phase 3</span>
+                        <h3 class="stage-title">Choosing Your Home</h3>
+                        <p class="stage-desc">It's time to find your dream home. You choose a property from our vetted catalog, and we seamlessly convert your accumulated savings into your down payment.</p>
+                    </div>
+                </div>
+
+                <!-- Stage 4 -->
+                <div class="journey-card reveal-up" style="transition-delay: 0.3s;">
+                    <div class="journey-icon"><i class="ph ph-key"></i></div>
+                    <div class="journey-content">
+                        <span class="stage-tag">Phase 4</span>
+                        <h3 class="stage-title">Getting the Keys</h3>
+                        <p class="stage-desc">We handle the final paperwork and transfer the complete title to you. You transition from a renter to a proud homeowner, years earlier than you might have thought possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Rent-vs-Asset Calculator -->
+    <section class="calculator-section reveal-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge"><i class="ph ph-calculator"></i> HOAS Interactive Model</div>
+                <h2 class="section-title">Rent vs. Asset Calculator</h2>
+                <p class="section-subtitle">See exactly how much wealth vanishes with normal renting, and how KeyOwn Habitat recaptures it.</p>
+            </div>
+            
+            <div class="calculator-container glass-card">
+                <div class="calc-inputs">
+                    <div class="input-group">
+                        <div class="label-row">
+                            <label for="monthly-rent">Current Monthly Rent</label>
+                            <span class="value-display" id="rent-value">₹30,000</span>
+                        </div>
+                        <input type="range" id="monthly-rent" min="15000" max="150000" step="5000" value="30000" class="slider">
+                        <div class="slider-marks">
+                            <span>₹15K</span>
+                            <span>₹50K</span>
+                            <span>₹100K</span>
+                            <span>₹150K</span>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="label-row">
+                            <label for="transition-period">Target Transition Period</label>
+                            <span class="value-display" id="period-value">240 Months (20 yrs)</span>
+                        </div>
+                        <input type="range" id="transition-period" min="24" max="300" step="12" value="240" class="slider">
+                        <div class="slider-marks">
+                            <span>2 yrs</span>
+                            <span>10 yrs</span>
+                            <span>20 yrs</span>
+                            <span>25 yrs</span>
+                        </div>
+                    </div>
+
+                    <div class="calc-info-alert">
+                        <i class="ph ph-info"></i>
+                        <p>Based on a standard 10% annual rent escalation rate and an estimated 11.2% co-investment compounding yield.</p>
+                    </div>
+                </div>
+                
+                <div class="calc-outputs">
+                    <div class="output-card warning-card">
+                        <span class="output-label"><i class="ph ph-trend-down"></i> Wasted Rent Expense</span>
+                        <h3 class="output-amount" id="wasted-rent">₹51.2 Lakhs</h3>
+                        <p class="output-helper">Completely unrecoverable expense paid to landlord.</p>
+                    </div>
+                    
+                    <div class="output-card success-card">
+                        <span class="output-label"><i class="ph ph-trend-up"></i> KeyOwn Asset Equity</span>
+                        <h3 class="output-amount" id="keyown-equity">₹18.4 Lakhs</h3>
+                        <p class="output-helper">Recaptured equity to be used for your home purchase.</p>
+                    </div>
+                    
+                    <div class="output-card highlight-card">
+                        <span class="output-label"><i class="ph ph-hand-coins"></i> Your HOAS Advantage</span>
+                        <h3 class="output-amount text-gradient" id="net-advantage">₹18.4 Lakhs</h3>
+                        <p class="output-helper">Net financial boost starting your home ownership legacy.</p>
+                        <a href="#contact" class="btn btn-primary btn-block mt-4">Lock In Strategy <i class="ph ph-lightning"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why KeyOwn / Key Benefits Grid -->
+    <section class="benefits-section reveal-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge"><i class="ph ph-sparkles"></i> Habitat Edge</div>
+                <h2 class="section-title">Why Choose KeyOwn Habitat?</h2>
+                <p class="section-subtitle">Traditional home buying is broken. KeyOwn provides the smart tenant's alternative.</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card glass-card reveal-up">
+                    <div class="benefit-icon"><i class="ph ph-piggy-bank"></i></div>
+                    <h3 class="benefit-title">Forced Savings Integration</h3>
+                    <p class="benefit-desc">Redirect a portion of your rent into equity assets automatically. No change in lifestyle—just better financial planning.</p>
+                </div>
+                
+                <div class="benefit-card glass-card reveal-up">
+                    <div class="benefit-icon" style="background: rgba(20, 241, 217, 0.1); color: var(--accent-teal);"><i class="ph ph-shield-check"></i></div>
+                    <h3 class="benefit-title">Down Payment Matching</h3>
+                    <p class="benefit-desc">Our partner institutions match your equity holdings at transition, multiplying your purchasing power by up to 1.5x.</p>
+                </div>
+                
+                <div class="benefit-card glass-card reveal-up">
+                    <div class="benefit-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--accent-gold);"><i class="ph ph-certificate"></i></div>
+                    <h3 class="benefit-title">Pre-Negotiated Assets</h3>
+                    <p class="benefit-desc">Gain access to off-market premium developments pre-vetted for structural, legal, and title integrity at discounts of up to 12%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Real Results -->
+    <section id="testimonials" class="testimonials-section reveal-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge"><i class="ph ph-heart"></i> Success Stories</div>
+                <h2 class="section-title">Real Results from Real People</h2>
+                <p class="section-subtitle">Join the thousands of tenants who have successfully transitioned to homeownership using the HOAS Framework.</p>
+            </div>
+            
+            <div class="testimonials-marquee-wrapper">
+            <div class="testimonials-track">
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(0, 98, 65, 0.1); color: var(--accent-indigo);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Priya Sharma</h3>
+                    <p class="benefit-desc">"I never thought I could afford a down payment while paying 30k in rent every month. KeyOwn literally structured my finances so my rent became my down payment. I just got my keys!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--accent-gold);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Rahul Verma</h3>
+                    <p class="benefit-desc">"The advisory counsel is incredible. They negotiated a 10% discount on a pre-launch property that wasn't even on the market yet. The HOAS framework is brilliant."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(30, 57, 50, 0.1); color: var(--accent-teal);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Anjali Desai</h3>
+                    <p class="benefit-desc">"Stop renting right now and use this. I wasted 5 years paying a landlord. In just 3 years with KeyOwn, my equity match allowed me to buy my dream apartment."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(0, 98, 65, 0.1); color: var(--accent-indigo);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Vikram Singh</h3>
+                    <p class="benefit-desc">"The rent-to-own concept was new to me, but KeyOwn made it so transparent. Their team guided me through every legal and financial step."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--accent-gold);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Sneha Reddy</h3>
+                    <p class="benefit-desc">"I thought villas were out of reach. With the co-investment compounding yield, my savings grew much faster than traditional deposits."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(30, 57, 50, 0.1); color: var(--accent-teal);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Arjun Nair</h3>
+                    <p class="benefit-desc">"Why pay someone else's mortgage? The rent escalation protection alone is worth its weight in gold. Extremely satisfied."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(0, 98, 65, 0.1); color: var(--accent-indigo);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Kavya Menon</h3>
+                    <p class="benefit-desc">"We moved from a cramped 2BHK to a luxury 3BHK because we knew every rupee was building our own equity. Best decision ever."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--accent-gold);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Rohan Das</h3>
+                    <p class="benefit-desc">"When it was time to transition and buy out the equity, the paperwork was zero hassle. KeyOwn handled everything."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(0, 98, 65, 0.1); color: var(--accent-indigo);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Priya Sharma</h3>
+                    <p class="benefit-desc">"I never thought I could afford a down payment while paying 30k in rent every month. KeyOwn literally structured my finances so my rent became my down payment. I just got my keys!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--accent-gold);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Rahul Verma</h3>
+                    <p class="benefit-desc">"The advisory counsel is incredible. They negotiated a 10% discount on a pre-launch property that wasn't even on the market yet. The HOAS framework is brilliant."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(30, 57, 50, 0.1); color: var(--accent-teal);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Anjali Desai</h3>
+                    <p class="benefit-desc">"Stop renting right now and use this. I wasted 5 years paying a landlord. In just 3 years with KeyOwn, my equity match allowed me to buy my dream apartment."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(0, 98, 65, 0.1); color: var(--accent-indigo);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Vikram Singh</h3>
+                    <p class="benefit-desc">"The rent-to-own concept was new to me, but KeyOwn made it so transparent. Their team guided me through every legal and financial step."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--accent-gold);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Sneha Reddy</h3>
+                    <p class="benefit-desc">"I thought villas were out of reach. With the co-investment compounding yield, my savings grew much faster than traditional deposits."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(30, 57, 50, 0.1); color: var(--accent-teal);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Arjun Nair</h3>
+                    <p class="benefit-desc">"Why pay someone else's mortgage? The rent escalation protection alone is worth its weight in gold. Extremely satisfied."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(0, 98, 65, 0.1); color: var(--accent-indigo);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Kavya Menon</h3>
+                    <p class="benefit-desc">"We moved from a cramped 2BHK to a luxury 3BHK because we knew every rupee was building our own equity. Best decision ever."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="benefit-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--accent-gold);"><i class="ph ph-user"></i></div>
+                    <h3 class="benefit-title">Rohan Das</h3>
+                    <p class="benefit-desc">"When it was time to transition and buy out the equity, the paperwork was zero hassle. KeyOwn handled everything."</p>
+                </div>
+</div>
+            </div>
+            
+            <div class="slider-dots">
+                <div class="dot active" data-index="0"></div>
+                <div class="dot" data-index="1"></div>
+                <div class="dot" data-index="2"></div>
+                <div class="dot" data-index="3"></div>
+                <div class="dot" data-index="4"></div>
+                <div class="dot" data-index="5"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section reveal-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge"><i class="ph ph-question"></i> Help Center</div>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about the Home Ownership Advisory System.</p>
+            </div>
+            
+            <div class="faq-accordion-container">
+                <div class="faq-item glass-card">
+                    <div class="faq-trigger">
+                        <span>How does KeyOwn convert my monthly rent into equity?</span>
+                        <i class="ph ph-caret-down transition-transform"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>KeyOwn collaborates with a network of financial co-investment platforms. A structured portion of your rent is co-invested in safe, high-yielding housing debt instruments and real estate investment trusts (REITs). This fractional holding grows steadily and compiles into a substantial down payment fund for your eventual property title transfer.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-card">
+                    <div class="faq-trigger">
+                        <span>Is my accumulated equity safe if I decide to move?</span>
+                        <i class="ph ph-caret-down transition-transform"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>Absolutely. Your accumulated co-ownership equity is fully liquid and legally registered in your personal name under our partner trust. If you relocate or choose to exit before the 120-month cycle, you can choose to cash out your fractional holdings at the prevailing market rates or roll over the equity into a new rental property within the HOAS framework.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-card">
+                    <div class="faq-trigger">
+                        <span>How does KeyOwn guarantee a lower mortgage rate?</span>
+                        <i class="ph ph-caret-down transition-transform"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>We work directly with major national banks (HDFC, SBI, ICICI) to report rental history as a primary positive credit signal. Flawless rental tracking combined with our proprietary Down Payment Matching trust decreases the lender's risk profile, unlocking a guaranteed lower interest spread (saving you an estimated 0.5% - 0.75% over normal buyers).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-card">
+                    <div class="faq-trigger">
+                        <span>Is this a rent-to-own scheme?</span>
+                        <i class="ph ph-caret-down transition-transform"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>No. Standard rent-to-own schemes lock you into a single developer's building, often with heavily inflated prices and severe penalties for late payments. KeyOwn Habitat is a portable advisory and co-ownership framework that lets you build liquid asset equity while renting anywhere, giving you full choice of your ultimate purchase catalog.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-card">
+                    <div class="faq-trigger">
+                        <span>What are the eligibility criteria to join?</span>
+                        <i class="ph ph-caret-down transition-transform"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>To join KeyOwn Habitat, you need to be a salaried professional or business owner with a stable income and a clean rental history for at least the past 12 months. We do not require a perfect credit score to start, as our system helps build your credit profile over time.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-card">
+                    <div class="faq-trigger">
+                        <span>Are there any hidden fees or advisory charges?</span>
+                        <i class="ph ph-caret-down transition-transform"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>We believe in absolute transparency. There are no upfront hidden fees. KeyOwn charges a flat 1.5% advisory fee only when you successfully transition to homeownership and we facilitate your mortgage. During the rental phase, your entire co-investment portion goes directly into your equity pool.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-card">
+                    <div class="faq-trigger">
+                        <span>Can I buy a home before the 10-year transition period?</span>
+                        <i class="ph ph-caret-down transition-transform"></i>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes! The 120-month (10-year) timeline is just a standard projection. Depending on your rent amount, savings rate, and chosen property value, many of our clients accumulate enough equity to make their down payment in as little as 4 to 6 years.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment Form / Final CTA Section -->
+    <section id="contact" class="assessment-section reveal-up">
+        <div class="container">
+            <div class="assessment-grid">
+                <div class="assessment-info">
+                    <div class="badge"><i class="ph ph-lightning"></i> Final Step</div>
+                    <h2 class="section-title" style="font-size: 2.2rem;">Ready to Start Owning?</h2>
+                    <p class="section-subtitle" style="font-size: 0.95rem; margin-bottom: 1.5rem;">Tell us about your current renting situation and we'll create your personalized transition blueprint.</p>
+                    
+                    <h4 style="margin: 1.5rem 0 1rem; font-size: 1.1rem;">What You'll Get</h4>
+                    <div class="info-list">
+                        <div class="info-item" style="border: none; padding: 0; margin-bottom: 1rem;">
+                            <div class="info-icon" style="width: 40px; height: 40px;"><i class="ph ph-check"></i></div>
+                            <div class="info-text">
+                                <h4 style="font-size: 1rem; margin-bottom: 0.2rem;">Personalized Transition Plan</h4>
+                                <p style="font-size: 0.85rem;">A step-by-step 120-month financial roadmap.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item" style="border: none; padding: 0; margin-bottom: 1rem;">
+                            <div class="info-icon" style="width: 40px; height: 40px;"><i class="ph ph-check"></i></div>
+                            <div class="info-text">
+                                <h4 style="font-size: 1rem; margin-bottom: 0.2rem;">Free Strategy Consultation</h4>
+                                <p style="font-size: 0.85rem;">1-on-1 call with a certified estate advisor.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item" style="border: none; padding: 0;">
+                            <div class="info-icon" style="width: 40px; height: 40px;"><i class="ph ph-check"></i></div>
+                            <div class="info-text">
+                                <h4 style="font-size: 1rem; margin-bottom: 0.2rem;">Equity Match Calculation</h4>
+                                <p style="font-size: 0.85rem;">See exactly how much matching equity you qualify for.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="assessment-card glass-card">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">Get Your Free Blueprint</h3>
+                    <form id="strategy-form">
+                        <div class="form-grid">
+                            <div class="input-field full-width">
+                                <label for="user-name">Full Name</label>
+                                <div class="input-container">
+                                    <i class="ph ph-user"></i>
+                                    <input type="text" id="user-name" placeholder="John Doe" required>
+                                </div>
+                            </div>
+                            
+                            <div class="input-field full-width">
+                                <label for="user-email">Email Address</label>
+                                <div class="input-container">
+                                    <i class="ph ph-envelope"></i>
+                                    <input type="email" id="user-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="input-field full-width">
+                                <label for="user-phone">Phone Number</label>
+                                <div class="input-container">
+                                    <i class="ph ph-phone"></i>
+                                    <input type="tel" id="user-phone" placeholder="+91 98765 43210" required>
+                                </div>
+                            </div>
+                            
+                            <div class="input-field full-width">
+                                <label for="user-city">Current Renting City</label>
+                                <div class="input-container">
+                                    <i class="ph ph-map-pin"></i>
+                                    <input type="text" id="user-city" placeholder="e.g. Bangalore, Hyderabad, Pune" required>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block btn-lg full-width" style="margin-top: 1rem;">
+                                Generate My Blueprint <i class="ph ph-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div id="form-success" class="form-success-message d-none">
+                        <i class="ph ph-check-circle"></i>
+                        <h3>Blueprint Request Submitted!</h3>
+                        <p>Thank you! Your custom financial transition blueprint calculations have begun. A certified HOAS advisor will contact you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="Keyown habitat transparent .png" alt="KeyOwn Habitat Logo" class="custom-logo" style="filter: brightness(0) invert(1); max-width: 220px; margin-left: -15px; mix-blend-mode: normal;">
+                </div>
+                <p class="brand-desc">Building wealth bridges for the modern renter. The first structured pathway from lease to asset legacy.</p>
+                <div class="footer-contact-info">
+                    <a href="https://www.keyownhabitat.com" target="_blank"><i class="ph ph-globe"></i> www.keyownhabitat.com</a>
+                    <a href="mailto:hello@keyownhabitat.com"><i class="ph ph-envelope"></i> hello@keyownhabitat.com</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook" class="social-icon-btn"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#" aria-label="Instagram" class="social-icon-btn"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#" aria-label="Twitter" class="social-icon-btn"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#" aria-label="LinkedIn" class="social-icon-btn"><i class="ph ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="links-column">
+                    <h4>Framework</h4>
+                    <a href="#stages">Stages</a>
+                    <a href="#plans">Subscription Tiers</a>
+                    <a href="#contact">Rent Calculator</a>
+                    <a href="#">Security Trust</a>
+                </div>
+                
+                <div class="links-column">
+                    <h4>Company</h4>
+                    <a href="#about">About HOAS</a>
+                    <a href="#">Advisory Board</a>
+                    <a href="#">Partners</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 KeyOwn Habitat Systems Private Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Widgets -->
+    <a href="https://wa.me/919876543210?text=Hi,%20I%20want%20to%20know%20more%20about%20KeyOwn%20Habitat%20Home%20Ownership%20Advisory%20System." class="whatsapp-floating-btn" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="ph ph-whatsapp-logo"></i>
+    </a>
+    
+    <div class="chatbot-widget" id="chatbot-widget">
+        <button class="chatbot-trigger" id="chatbot-trigger" aria-label="Toggle Chatbot">
+            <i class="ph ph-chat-centered-text"></i>
+            <span class="trigger-badge" id="trigger-badge">1</span>
+        </button>
+
+        <div class="chatbot-window" id="chatbot-window">
+            <!-- Header -->
+            <div class="chatbot-header">
+                <div class="chat-avatar">
+                    <i class="ph ph-sparkle"></i>
+                </div>
+                <div class="chat-status">
+                    <h4>HOAS Assistant</h4>
+                    <span><span class="online-indicator"></span> Active Now</span>
+                </div>
+                <div class="chat-header-actions">
+                    <button class="chat-action-btn" id="chat-restart" aria-label="Restart Chat" title="Restart">
+                        <i class="ph ph-arrow-counter-clockwise"></i>
+                    </button>
+                    <button class="chat-action-btn" id="chat-close" aria-label="Close Chat">
+                        <i class="ph ph-x"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Messages Area -->
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages injected by JS -->
+            </div>
+
+            <!-- Typing Indicator (hidden by default) -->
+            <div class="chat-typing" id="chat-typing" style="display:none;">
+                <span></span><span></span><span></span>
+            </div>
+
+            <!-- Quick-reply Options -->
+            <div class="chat-options" id="chat-options"></div>
+
+            <!-- Free-text Input -->
+            <div class="chat-input-row" id="chat-input-row">
+                <input type="text" id="chat-input" class="chat-input" placeholder="Type a message…" autocomplete="off" />
+                <button class="chat-send-btn" id="chat-send" aria-label="Send">
+                    <i class="ph ph-paper-plane-tilt"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

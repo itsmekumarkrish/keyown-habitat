@@ -267,6 +267,22 @@ document.addEventListener('DOMContentLoaded', () => {
             const userPhone = document.getElementById('user-phone').value;
             const userCity = document.getElementById('user-city').value;
             
+            // --- Basic Validation ---
+            // Phone: strip spaces and dashes, then check if it's 10 digits (with optional +91)
+            const cleanPhone = userPhone.replace(/[\s\-]/g, '');
+            const phoneRegex = /^(\+91)?\d{10}$/;
+            if (!phoneRegex.test(cleanPhone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return;
+            }
+            
+            // Email typo check (.con instead of .com)
+            if (userEmail.toLowerCase().endsWith('.con')) {
+                alert("It looks like there's a typo in your email (ends with .con). Did you mean .com?");
+                return;
+            }
+            // ------------------------
+            
             // 1. Send to Email via FormSubmit
             const formData = new FormData();
             formData.append('Name', userName);
@@ -275,16 +291,19 @@ document.addEventListener('DOMContentLoaded', () => {
             formData.append('City', userCity);
             
             // Add custom auto-reply message
-            const autoReplyMessage = `Hi ${userName.split(' ')[0]},\n\nThank you for requesting your Free Blueprint with KeyOwn Habitat! \n\nWe have successfully received your details. A certified Home Ownership Advisor will be reviewing your information and will contact you shortly to walk you through your personalized 120-month transition roadmap.\n\nBest regards,\nThe KeyOwn Habitat Team\nhello@keyownhabitat.com`;
+            const autoReplyMessage = `Hi ${userName.split(' ')[0]},\n\nThank you for requesting your Free Assessment with KeyOwn Habitat! \n\nWe have successfully received your details. A certified Home Ownership Advisor will be reviewing your information and will contact you shortly to walk you through your personalized 120-month transition roadmap.\n\nBest regards,\nThe KeyOwn Habitat Team\nhello@keyownhabitat.com`;
             formData.append('_autoresponse', autoReplyMessage);
             
-            fetch('https://formsubmit.co/ajax/3e3a163c1e34488fb471ec3c32dcb4f0', {
+            // Disable Captcha since we are using AJAX
+            formData.append('_captcha', 'false');
+            
+            fetch('https://formsubmit.co/ajax/keyownhabitat@gmail.com', {
                 method: 'POST',
                 body: formData
             }).catch(error => console.error('Error submitting form:', error));
             
             // 2. Open WhatsApp
-            const waText = `Hi, I'm interested in the HOAS Blueprint.\n\n*Name:* ${userName}\n*Email:* ${userEmail}\n*Phone:* ${userPhone}\n*City:* ${userCity}`;
+            const waText = `Hi, I'm interested in the HOAS Assessment.\n\n*Name:* ${userName}\n*Email:* ${userEmail}\n*Phone:* ${userPhone}\n*City:* ${userCity}`;
             const waUrl = `https://wa.me/919886535949?text=${encodeURIComponent(waText)}`;
             window.open(waUrl, '_blank');
             
@@ -302,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Personalize message
                 const successHeading = formSuccess.querySelector('h3');
                 if (successHeading) {
-                    successHeading.innerText = `Blueprint Request Submitted, ${userName.split(' ')[0]}!`;
+                    successHeading.innerText = `Assessment Request Submitted, ${userName.split(' ')[0]}!`;
                 }
 
                 setTimeout(() => {

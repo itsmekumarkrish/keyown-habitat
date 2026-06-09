@@ -261,8 +261,32 @@ document.addEventListener('DOMContentLoaded', () => {
         strategyForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
-            // Collect info for simulated lead transition
+            // Collect info
             const userName = document.getElementById('user-name').value;
+            const userEmail = document.getElementById('user-email').value;
+            const userPhone = document.getElementById('user-phone').value;
+            const userCity = document.getElementById('user-city').value;
+            
+            // 1. Send to Email via FormSubmit
+            const formData = new FormData();
+            formData.append('Name', userName);
+            formData.append('email', userEmail); // 'email' triggers the auto-response
+            formData.append('Phone', userPhone);
+            formData.append('City', userCity);
+            
+            // Add custom auto-reply message
+            const autoReplyMessage = `Hi ${userName.split(' ')[0]},\n\nThank you for requesting your Free Blueprint with KeyOwn Habitat! \n\nWe have successfully received your details. A certified Home Ownership Advisor will be reviewing your information and will contact you shortly to walk you through your personalized 120-month transition roadmap.\n\nBest regards,\nThe KeyOwn Habitat Team\nhello@keyownhabitat.com`;
+            formData.append('_autoresponse', autoReplyMessage);
+            
+            fetch('https://formsubmit.co/ajax/3e3a163c1e34488fb471ec3c32dcb4f0', {
+                method: 'POST',
+                body: formData
+            }).catch(error => console.error('Error submitting form:', error));
+            
+            // 2. Open WhatsApp
+            const waText = `Hi, I'm interested in the HOAS Blueprint.\n\n*Name:* ${userName}\n*Email:* ${userEmail}\n*Phone:* ${userPhone}\n*City:* ${userCity}`;
+            const waUrl = `https://wa.me/919886535949?text=${encodeURIComponent(waText)}`;
+            window.open(waUrl, '_blank');
             
             // Stagger transition effect
             strategyForm.style.opacity = '0';
@@ -278,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Personalize message
                 const successHeading = formSuccess.querySelector('h3');
                 if (successHeading) {
-                    successHeading.innerText = `Blueprint Calculation Set, ${userName.split(' ')[0]}!`;
+                    successHeading.innerText = `Blueprint Request Submitted, ${userName.split(' ')[0]}!`;
                 }
 
                 setTimeout(() => {
